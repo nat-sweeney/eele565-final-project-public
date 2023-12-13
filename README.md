@@ -1,4 +1,4 @@
-Parallel K-Means implementation in Julia (with the help of preprocessing in Matlab).
+Parallel K-Means implementation in Julia (with the help of preprocessing in Matlab). The code should be able to run once you clone the repo. The code is meant to be run on Tempest using the batch scripts, but the individual scripts can get run locally using the scripts in serial/ and parallel/. The benchmarking for the code was based on parameters outlined in the batch scripts in benchmarking/. Computational efforts were performed on the Tempest High Performance Computing System, operated and supported by University Information Technology Research Cyberinfrastructure at Montana State University.
 
 FILE STRUCTURE:
 batch: Contains sbatch files for running jobs on Tempest HPC.
