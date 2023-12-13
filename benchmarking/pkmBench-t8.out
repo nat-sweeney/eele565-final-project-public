@@ -1,0 +1,103 @@
+#------------------------------------------------
+THREADS = 8
+#------------------------------------------------
+LOADING SMALL DATASET: 
+#------------------------------------------------
+BenchmarkTools.Trial: 100 samples with 1 evaluation.
+ Range (min … max):  18.108 ms …  20.372 ms  ┊ GC (min … max): 0.00% … 0.00%
+ Time  (median):     18.574 ms               ┊ GC (median):    0.00%
+ Time  (mean ± σ):   18.693 ms ± 404.764 μs  ┊ GC (mean ± σ):  0.85% ± 1.19%
+
+             ▃ █▆                ▂                              
+  ▄▄▄▅▇▇███▇██▄███▅█▄▄▄█▁▁▅▅▅▄▅█▁█▄▁▄▄▄▁▄▁▁▁▄▄▁▁▄▁▁▄▁▁▁▁▁▁▁▁▁▄ ▄
+  18.1 ms         Histogram: frequency by time           20 ms <
+
+ Memory estimate: 15.39 MiB, allocs estimate: 79.
+#------------------------------------------------
+CALCULATING SMALL K-MEANS: 
+BenchmarkTools.Trial: 100 samples with 1 evaluation.
+ Range (min … max):  15.236 ms … 107.441 ms  ┊ GC (min … max): 0.00% … 0.00%
+ Time  (median):     27.887 ms               ┊ GC (median):    0.00%
+ Time  (mean ± σ):   32.276 ms ±  13.627 ms  ┊ GC (mean ± σ):  0.00% ± 0.00%
+
+       ▂▃ ▃▅▆█▅▂                                                
+  ▄▁▄▇▄██▇██████▇██▄▄▅▁▄▁▄▇▄█▁▄▄▄▁▅▁▁▁▄▄▁▅▁▁▁▁▁▁▁▄▄▁▁▁▁▁▁▁▁▁▁▄ ▄
+  15.2 ms         Histogram: frequency by time         78.7 ms <
+
+ Memory estimate: 12.30 MiB, allocs estimate: 599.
+#================================================
+LOADING MEDIUM DATASET: 
+-------------------------------------------------
+BenchmarkTools.Trial: 100 samples with 1 evaluation.
+ Range (min … max):  46.002 ms …  52.260 ms  ┊ GC (min … max): 0.00% … 2.32%
+ Time  (median):     48.214 ms               ┊ GC (median):    2.52%
+ Time  (mean ± σ):   48.016 ms ± 923.469 μs  ┊ GC (mean ± σ):  1.92% ± 1.11%
+
+                             ▂▅██▂                              
+  ▃▁▁▅▃▃▁▅▃▃▃█▅█▃▅▃▃▅▃▃▃▆▃▆███████▆▆▅▅▁▁▁▁▁▁▁▁▁▃▁▁▁▁▃▁▃▁▁▁▁▁▁▃ ▃
+  46 ms           Histogram: frequency by time         50.7 ms <
+
+ Memory estimate: 38.82 MiB, allocs estimate: 79.
+#------------------------------------------------
+CALCULATING MEDIUM K-MEANS: 
+BenchmarkTools.Trial: 100 samples with 1 evaluation.
+ Range (min … max):   86.110 ms … 714.082 ms  ┊ GC (min … max): 0.00% … 0.00%
+ Time  (median):     201.718 ms               ┊ GC (median):    0.00%
+ Time  (mean ± σ):   225.702 ms ± 112.053 ms  ┊ GC (mean ± σ):  0.01% ± 0.06%
+
+    ▁ ▃▁▁▆█▃  ▆  ▁▁  ▆  ▃      ▁▁                   ▁            
+  ▇▇█▇██████▁▇█▁▄██▇▇█▇▇█▇▁▇▄▄▁██▄▇▄▁▄▁▁▄▁▁▄▇▄▇▄▁▁▄▄█▁▁▁▁▄▁▁▄▁▇ ▄
+  86.1 ms          Histogram: frequency by time          480 ms <
+
+ Memory estimate: 32.40 MiB, allocs estimate: 966.
+#================================================
+LOADING LARGE DATASET: 
+-------------------------------------------------
+BenchmarkTools.Trial: 100 samples with 1 evaluation.
+ Range (min … max):  94.898 ms …  99.953 ms  ┊ GC (min … max): 1.65% … 3.47%
+ Time  (median):     96.055 ms               ┊ GC (median):    1.66%
+ Time  (mean ± σ):   96.117 ms ± 757.347 μs  ┊ GC (mean ± σ):  1.69% ± 0.25%
+
+       ▃ ▁▃  ▃ ▆█▄█▁▄▃▁▃                                        
+  ▆▄▄▄▄█▇██▇▄█▇█████████▄▄▇▁▄▄▄▁▄▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▄▁▁▁▁▁▁▁▁▁▁▁▁▄ ▄
+  94.9 ms         Histogram: frequency by time         99.6 ms <
+
+ Memory estimate: 75.78 MiB, allocs estimate: 79.
+#------------------------------------------------
+CALCULATING LARGE K-MEANS: 
+BenchmarkTools.Trial: 100 samples with 1 evaluation.
+ Range (min … max):  679.339 ms …    4.039 s  ┊ GC (min … max): 0.00% … 0.00%
+ Time  (median):        2.036 s               ┊ GC (median):    0.00%
+ Time  (mean ± σ):      2.053 s ± 863.831 ms  ┊ GC (mean ± σ):  0.00% ± 0.00%
+
+        ▁ ▆▃  █ ▁       ▁     ▁  ▁            ▃ ▆▁               
+  ▇▄▄▇▄▇█▇██▄▇█▄█▄▇▄▁▄▁▇█▇▄▄▇▇█▄▇█▇▄▁▄▄▇▇▄▄▇▄▄█▄██▇▄▄▄▁▁▄▁▁▁▁▁▇ ▄
+  679 ms           Histogram: frequency by time          3.86 s <
+
+ Memory estimate: 70.83 MiB, allocs estimate: 2037.
+#================================================
+LOADING FULL DATASET: 
+-------------------------------------------------
+BenchmarkTools.Trial: 100 samples with 1 evaluation.
+ Range (min … max):  151.630 ms … 156.800 ms  ┊ GC (min … max): 1.08% … 2.50%
+ Time  (median):     152.595 ms               ┊ GC (median):    1.10%
+ Time  (mean ± σ):   152.726 ms ± 830.723 μs  ┊ GC (mean ± σ):  1.13% ± 0.20%
+
+        ▂▂▂▅▄▄▄▅█ ▂                                              
+  ▅▅▃▃▃██████████▅█▆▃▅▅▁▃▁▁▁▅▁▃▃▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▃▃ ▃
+  152 ms           Histogram: frequency by time          157 ms <
+
+ Memory estimate: 122.63 MiB, allocs estimate: 79.
+#------------------------------------------------
+CALCULATING FULL K-MEANS: 
+BenchmarkTools.Trial: 100 samples with 1 evaluation.
+ Range (min … max):  1.519 s … 9.359 s  ┊ GC (min … max): 0.00% … 0.02%
+ Time  (median):     4.018 s            ┊ GC (median):    0.00%
+ Time  (mean ± σ):   4.377 s ± 2.117 s  ┊ GC (mean ± σ):  0.03% ± 0.03%
+
+      █▁▁    ▄      ▃             ▁                        
+  ▇▇▄▆███▇▇▇▆█▄▄▁▆▄▄█▄▆▄▇▁▄▄▆▆▆▁▇▆█▆▄▁▆▄▇▄▁▄▁▄▆▆▆▁▁▁▁▄▁▄▆ ▄
+  1.52 s        Histogram: frequency by time       9.04 s <
+
+ Memory estimate: 121.23 MiB, allocs estimate: 2140.
+#================================================
